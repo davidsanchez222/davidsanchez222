@@ -111,8 +111,13 @@
 **visit my [personal website](https://davidsanchez.io/#/works/open-source) to see more.**
 
 ### pull requests && issues
-<!--CONTRIB BEGIN-->
-<!--CONTRIB END-->
+<!-- OPEN_PRS_START -->
+
+<!-- OPEN_PRS_END -->
+
+<!-- MERGED_PRS_START -->
+
+<!-- MERGED_PRS_END -->
 
 <br/>
 
