@@ -1,8 +1,8 @@
-name: Update PR lists
+name: Update PR contributions
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" 
   workflow_dispatch:
 
 permissions:
@@ -16,80 +16,112 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v4
 
-      - name: Update README PR sections
-        uses: actions/github-script@v7
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          script: |
-            const fs = require("fs");
-            const username = "davidsanchez222";
+          python-version: "3.11"
 
-            async function searchPRs(query) {
-              const results = await github.paginate(
-                github.rest.search.issuesAndPullRequests,
-                {
-                  q: query,
-                  per_page: 100,
-                }
-              );
-              return results.filter(item => item.pull_request);
-            }
+      - name: Install dependencies
+        run: pip install PyGithub
 
-            const openQuery = `is:pr is:open author:${username}`;
-            const mergedQuery = `is:pr is:merged author:${username}`;
+      - name: Update README contribution section
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: davidsanchez222
+          GH_MODE: release
+        run: |
+          python <<'PY'
+          import os
+          import re
+          import time
+          from github import Github
 
-            const openPRs = await searchPRs(openQuery);
-            const mergedPRs = await searchPRs(mergedQuery);
+          README_PATH = "README.md"
+          USERNAME = os.environ["GH_USERNAME"]
+          MODE = os.environ.get("GH_MODE", "release")
+          TOKEN = os.environ["GH_TOKEN"]
 
-            function formatPR(pr) {
-              const repo = pr.repository_url.replace("https://api.github.com/repos/", "");
-              return `- [${pr.title}](${pr.html_url}) — \`${repo}\``;
-            }
+          with open(README_PATH, "r", encoding="utf-8") as f:
+              readme = f.read()
 
-            const openSection =
-              openPRs.length
-                ? openPRs
-                    .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
-                    .slice(0, 10)
-                    .map(formatPR)
-                    .join("\n")
-                : "_No open PRs right now._";
+          g = Github(TOKEN, per_page=100)
 
-            const mergedSection =
-              mergedPRs.length
-                ? mergedPRs
-                    .sort((a, b) => new Date(b.closed_at) - new Date(a.closed_at))
-                    .slice(0, 10)
-                    .map(formatPR)
-                    .join("\n")
-                : "_No merged PRs found._";
+          query = f"is:pr author:{USERNAME} is:public"
+          prs = g.search_issues(query)
 
-            const readmePath = "README.md";
-            let readme = fs.readFileSync(readmePath, "utf8");
+          repos = {}
 
-            const startOpen = "<!-- OPEN_PRS_START -->";
-            const endOpen = "<!-- OPEN_PRS_END -->";
-            const startMerged = "<!-- MERGED_PRS_START -->";
-            const endMerged = "<!-- MERGED_PRS_END -->";
+          for pr in prs:
+              k = re.fullmatch(r"^https://github\.com/([^/]+)/([^/]+)/pull/\d+$", pr.html_url)
+              assert k is not None
 
-            function replaceSection(content, start, end, replacement) {
-              const regex = new RegExp(
-                `${start}[\\s\\S]*?${end}`,
-                "m"
-              );
-              return content.replace(regex, `${start}\n${replacement}\n${end}`);
-            }
+              owner = k.group(1)
+              repo_full_name = f"{k.group(1)}/{k.group(2)}"
 
-            readme = replaceSection(readme, startOpen, endOpen, openSection);
-            readme = replaceSection(readme, startMerged, endMerged, mergedSection);
+              # exclude repos owned by yourself
+              if owner != USERNAME:
+                  repos.setdefault(repo_full_name, []).append(pr)
 
-            fs.writeFileSync(readmePath, readme);
+          repo_prss = []
+
+          for repo_name, repo_issue_prs in repos.items():
+              repo = repo_issue_prs[0].repository
+              kept_prs = []
+
+              for pr in repo_issue_prs:
+                  if MODE == "release":
+                      time.sleep(1)
+
+                  full_pr = pr.as_pull_request()
+
+                  # keep only merged or currently open
+                  if full_pr.merged or full_pr.closed_at is None:
+                      kept_prs.append(full_pr)
+
+              kept_prs.sort(
+                  key=lambda pr: (pr.comments * 5) + pr.additions + pr.deletions,
+                  reverse=True,
+              )
+
+              if kept_prs:
+                  repo_prss.append((repo, kept_prs))
+
+          repo_prss.sort(
+              key=lambda repo_prs: repo_prs[0].stargazers_count,
+              reverse=True,
+          )
+
+          contrib = "\n"
+          for repo, pr_list in repo_prss:
+              contrib += (
+                  f"#### [{repo.name}]({repo.html_url}) "
+                  f"![](./assets/star.svg){repo.stargazers_count}\n"
+              )
+              for pr in pr_list:
+                  status_icon = "./assets/merged.svg" if pr.merged else "./assets/open.svg"
+                  contrib += f"- [{pr.title}]({pr.html_url}) ![]({status_icon})\n"
+
+          if not contrib.strip():
+              contrib = "\n_No open or merged public PRs found._\n"
+
+          pattern = r"<!--CONTRIB BEGIN-->.*?<!--CONTRIB END-->"
+          replacement = f"<!--CONTRIB BEGIN-->{contrib}<!--CONTRIB END-->"
+
+          if re.search(pattern, readme, flags=re.DOTALL):
+              readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+          else:
+              readme += "\n\n" + replacement + "\n"
+
+          with open(README_PATH, "w", encoding="utf-8") as f:
+              f.write(readme)
+          PY
 
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --cached --quiet || git commit -m "Update PR lists"
+          git diff --cached --quiet || git commit -m "Update PR contributions"
 
       - name: Push changes
         run: git push
