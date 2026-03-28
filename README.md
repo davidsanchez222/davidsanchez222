@@ -109,7 +109,6 @@
 ## open source contributions
 **visit my [personal website](https://davidsanchez.io/#/works/open-source) to see more.**
 
-![David's GitHub stats](https://github-readme-stats.vercel.app/api?username=davidsanchez222&count_private=true&show_icons=true&theme=transparent)
 ### pull requests && issues
 <!--CONTRIB BEGIN-->
 <!--CONTRIB END-->
