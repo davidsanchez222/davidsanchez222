@@ -111,25 +111,9 @@
 **visit my [personal website](https://davidsanchez.io/#/works/open-source) to see more.**
 
 ### pull requests && issues
-<!-- OPEN_PRS_START -->
-- [feat(macOS, Unix): 2fa confirmation messages on display banner](https://github.com/IbcAlpha/IBC/pull/308) — `IbcAlpha/IBC`
-- [feat: add CLI page-title support for preview HTML title](https://github.com/Myriad-Dreamin/tinymist/pull/2445) — `Myriad-Dreamin/tinymist`
-- [feat: add Typst PDF export command](https://github.com/chomosuke/typst-preview.nvim/pull/128) — `chomosuke/typst-preview.nvim`
-- [macos: opacity-toggle setting persists between tabs in a window and to a newly created window](https://github.com/ghostty-org/ghostty/pull/11583) — `ghostty-org/ghostty`
-<!-- OPEN_PRS_END -->
-
-<!-- MERGED_PRS_START -->
-- [feat(items): allow seller to edit and delete listed items](https://github.com/willgresham34/TradeIt_4060/pull/8) — `willgresham34/TradeIt_4060`
-- [feat(user-views): enhance transactions and add my listings screens](https://github.com/willgresham34/TradeIt_4060/pull/6) — `willgresham34/TradeIt_4060`
-- [feat(transactions): add accept/buy flow and my transactions screen](https://github.com/willgresham34/TradeIt_4060/pull/5) — `willgresham34/TradeIt_4060`
-- [feat(items): implement item listing, creation, and detail screens](https://github.com/willgresham34/TradeIt_4060/pull/4) — `willgresham34/TradeIt_4060`
-- [feat(categories): implement category list UI with live Firebase updates](https://github.com/willgresham34/TradeIt_4060/pull/3) — `willgresham34/TradeIt_4060`
-- [added semicolons at the end of statements from "puts" to "reallocarray" down the file chronologically](https://github.com/rafamadriz/friendly-snippets/pull/568) — `rafamadriz/friendly-snippets`
-- [Update userguide.md](https://github.com/IbcAlpha/IBC/pull/303) — `IbcAlpha/IBC`
-- [K: squashed added all scans](https://github.com/davidsanchez222/megacorp/pull/1) — `davidsanchez222/megacorp`
-- [L: modified classics.csv](https://github.com/davidsanchez222/webflyx/pull/1) — `davidsanchez222/webflyx`
-- [hello](https://github.com/davidsanchez222/deep/pull/2) — `davidsanchez222/deep`
-<!-- MERGED_PRS_END -->
+<!--CONTRIB BEGIN-->
+_Loading..._
+<!--CONTRIB END-->
 
 <br/>
 
