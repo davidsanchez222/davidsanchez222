@@ -1,7 +1,7 @@
 # david sanchez
-<img src="https://github.com/user-attachments/assets/37bb1b42-780f-4908-94a6-55d8d71c3f47" alt="wipeout" width="480" height="270"/>
 
-![GitHub Stats](./profile/stats.svg)
+  <img src="https://github.com/user-attachments/assets/37bb1b42-780f-4908-94a6-55d8d71c3f47" alt="wipeout" width="480" height="270" />
+
 
 ## things i've tinkered with...
 ### languages
@@ -115,5 +115,7 @@
 <!--CONTRIB END-->
 
 <br/>
+
+<img src="https://raw.githubusercontent.com/davidsanchez222/davidsanchez222/main/profile/stats.svg" alt="GitHub Stats" height="600" />
 
 This README is updated daily by [a python script running in GitHub Actions](https://github.com/davidsanchez222/davidsanchez222/blob/master/update.py)
