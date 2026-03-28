@@ -1,6 +1,8 @@
 # david sanchez
 ![wipeoutc](https://github.com/user-attachments/assets/37bb1b42-780f-4908-94a6-55d8d71c3f47)
 
+![GitHub Stats](./profile/stats.svg)
+![Top Languages](./profile/top-langs.svg)
 
 ## things i've tinkered with...
 ### languages
