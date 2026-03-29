@@ -112,9 +112,9 @@
 
 ### pull requests && issues
 <!--CONTRIB BEGIN-->
-#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)48985
+#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)49044
 - [macos: opacity-toggle setting persists between tabs in a window and to a newly created window](https://github.com/ghostty-org/ghostty/pull/11583) ![](./assets/open.svg)
-#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3039
+#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3038
 - [feat: add CLI page-title support for preview HTML title](https://github.com/Myriad-Dreamin/tinymist/pull/2445) ![](./assets/open.svg)
 #### [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) ![](./assets/star.svg)2676
 - [added semicolons at the end of statements from "puts" to "reallocarray" down the file chronologically](https://github.com/rafamadriz/friendly-snippets/pull/568) ![](./assets/merged.svg)
@@ -123,12 +123,6 @@
 - [Update userguide.md](https://github.com/IbcAlpha/IBC/pull/303) ![](./assets/merged.svg)
 #### [typst-preview.nvim](https://github.com/chomosuke/typst-preview.nvim) ![](./assets/star.svg)874
 - [feat: add Typst PDF export command](https://github.com/chomosuke/typst-preview.nvim/pull/128) ![](./assets/open.svg)
-#### [TradeIt_4060](https://github.com/willgresham34/TradeIt_4060) ![](./assets/star.svg)0
-- [feat(items): implement item listing, creation, and detail screens](https://github.com/willgresham34/TradeIt_4060/pull/4) ![](./assets/merged.svg)
-- [feat(user-views): enhance transactions and add my listings screens](https://github.com/willgresham34/TradeIt_4060/pull/6) ![](./assets/merged.svg)
-- [feat(transactions): add accept/buy flow and my transactions screen](https://github.com/willgresham34/TradeIt_4060/pull/5) ![](./assets/merged.svg)
-- [feat(categories): implement category list UI with live Firebase updates](https://github.com/willgresham34/TradeIt_4060/pull/3) ![](./assets/merged.svg)
-- [feat(items): allow seller to edit and delete listed items](https://github.com/willgresham34/TradeIt_4060/pull/8) ![](./assets/merged.svg)
 <!--CONTRIB END-->
 
 <br/>
