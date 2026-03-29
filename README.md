@@ -112,7 +112,7 @@
 
 ### pull requests && issues
 <!--CONTRIB BEGIN-->
-#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)48967
+#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)48985
 - [macos: opacity-toggle setting persists between tabs in a window and to a newly created window](https://github.com/ghostty-org/ghostty/pull/11583) ![](./assets/open.svg)
 #### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3039
 - [feat: add CLI page-title support for preview HTML title](https://github.com/Myriad-Dreamin/tinymist/pull/2445) ![](./assets/open.svg)
