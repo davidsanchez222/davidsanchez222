@@ -51,16 +51,26 @@ jobs:
 
           repos = {}
 
+          EXCLUDED_REPOS = {
+              "willgresham34/TradeIt_4060",
+          }
+          
           for pr in prs:
               k = re.fullmatch(r"^https://github\.com/([^/]+)/([^/]+)/pull/\d+$", pr.html_url)
               assert k is not None
-
+          
               owner = k.group(1)
-              repo_full_name = f"{k.group(1)}/{k.group(2)}"
+              repo_name = k.group(2)
+              repo_full_name = f"{owner}/{repo_name}"
+          
+              if owner == USERNAME:
+                  continue
+          
+              if repo_full_name in EXCLUDED_REPOS:
+                  continue
+          
+              repos.setdefault(repo_full_name, []).append(pr)
 
-              # exclude repos owned by yourself
-              if owner != USERNAME:
-                  repos.setdefault(repo_full_name, []).append(pr)
 
           repo_prss = []
 
