@@ -112,15 +112,14 @@
 
 ### pull requests && issues
 <!--CONTRIB BEGIN-->
-#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)49417
+#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)49519
 - [macos: opacity-toggle setting persists between tabs in a window and to a newly created window](https://github.com/ghostty-org/ghostty/pull/11583) ![](./assets/open.svg)
-#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3049
+#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3052
 - [feat: add CLI page-title support for preview HTML title](https://github.com/Myriad-Dreamin/tinymist/pull/2445) ![](./assets/open.svg)
-#### [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) ![](./assets/star.svg)2677
+#### [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) ![](./assets/star.svg)2680
 - [added semicolons at the end of statements from "puts" to "reallocarray" down the file chronologically](https://github.com/rafamadriz/friendly-snippets/pull/568) ![](./assets/merged.svg)
-#### [IBC](https://github.com/IbcAlpha/IBC) ![](./assets/star.svg)1440
+#### [IBC](https://github.com/IbcAlpha/IBC) ![](./assets/star.svg)1439
 - [feat: modernize the readme](https://github.com/IbcAlpha/IBC/pull/348) ![](./assets/open.svg)
-- [feat(macOS, Unix): 2fa confirmation messages on display banner](https://github.com/IbcAlpha/IBC/pull/308) ![](./assets/open.svg)
 - [Update userguide.md](https://github.com/IbcAlpha/IBC/pull/303) ![](./assets/merged.svg)
 <!--CONTRIB END-->
 
