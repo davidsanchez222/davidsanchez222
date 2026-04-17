@@ -112,18 +112,16 @@
 
 ### pull requests && issues
 <!--CONTRIB BEGIN-->
-#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)50835
+#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)50948
 - [macos: opacity-toggle setting persists between tabs in a window and to a newly created window](https://github.com/ghostty-org/ghostty/pull/11583) ![](./assets/open.svg)
-#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3105
+#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3107
 - [feat: add CLI page-title support for preview HTML title](https://github.com/Myriad-Dreamin/tinymist/pull/2445) ![](./assets/open.svg)
-#### [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) ![](./assets/star.svg)2695
+#### [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) ![](./assets/star.svg)2696
 - [added semicolons at the end of statements from "puts" to "reallocarray" down the file chronologically](https://github.com/rafamadriz/friendly-snippets/pull/568) ![](./assets/merged.svg)
 #### [IBC](https://github.com/IbcAlpha/IBC) ![](./assets/star.svg)1458
 - [feat: modernize the readme](https://github.com/IbcAlpha/IBC/pull/348) ![](./assets/open.svg)
 - [Update userguide.md](https://github.com/IbcAlpha/IBC/pull/303) ![](./assets/merged.svg)
-#### [qmk.nvim](https://github.com/codethread/qmk.nvim) ![](./assets/star.svg)249
-- [Update README with lazy.nvim configuration example](https://github.com/codethread/qmk.nvim/pull/58) ![](./assets/open.svg)
-#### [gtab](https://github.com/Franvy/gtab) ![](./assets/star.svg)65
+#### [gtab](https://github.com/Franvy/gtab) ![](./assets/star.svg)64
 - [feat(tui): preview split layouts in tabs pane](https://github.com/Franvy/gtab/pull/5) ![](./assets/open.svg)
 - [fix: improve filtering ux](https://github.com/Franvy/gtab/pull/4) ![](./assets/open.svg)
 <!--CONTRIB END-->
