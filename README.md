@@ -112,11 +112,11 @@
 
 ### pull requests && issues
 <!--CONTRIB BEGIN-->
-#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)51653
+#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)51656
 - [macos: opacity-toggle setting persists between tabs in a window and to a newly created window](https://github.com/ghostty-org/ghostty/pull/11583) ![](./assets/open.svg)
-#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3136
+#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3137
 - [feat: add CLI page-title support for preview HTML title](https://github.com/Myriad-Dreamin/tinymist/pull/2445) ![](./assets/merged.svg)
-#### [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) ![](./assets/star.svg)2706
+#### [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) ![](./assets/star.svg)2707
 - [added semicolons at the end of statements from "puts" to "reallocarray" down the file chronologically](https://github.com/rafamadriz/friendly-snippets/pull/568) ![](./assets/merged.svg)
 #### [IBC](https://github.com/IbcAlpha/IBC) ![](./assets/star.svg)1467
 - [feat: modernize the readme](https://github.com/IbcAlpha/IBC/pull/348) ![](./assets/open.svg)
