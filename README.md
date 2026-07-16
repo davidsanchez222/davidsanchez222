@@ -112,9 +112,9 @@
 
 ### pull requests && issues
 <!--CONTRIB BEGIN-->
-#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)58178
+#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)58234
 - [macos: opacity-toggle setting persists between tabs in a window and to a newly created window](https://github.com/ghostty-org/ghostty/pull/11583) ![](./assets/merged.svg)
-#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3402
+#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3404
 - [feat: add CLI page-title support for preview HTML title](https://github.com/Myriad-Dreamin/tinymist/pull/2445) ![](./assets/merged.svg)
 #### [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) ![](./assets/star.svg)2760
 - [added semicolons at the end of statements from "puts" to "reallocarray" down the file chronologically](https://github.com/rafamadriz/friendly-snippets/pull/568) ![](./assets/merged.svg)
