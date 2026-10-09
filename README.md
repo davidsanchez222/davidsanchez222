@@ -108,7 +108,7 @@
 </a>
 
 ## open source contributions
-**visit my [personal website](https://davidsanchez.io/#/works/open-source) to see more.**
+**visit my [personal website](https://dsanch.com/projects) to see more.**
 
 ### pull requests && issues
 <!--CONTRIB BEGIN-->
