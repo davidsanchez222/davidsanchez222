@@ -112,15 +112,15 @@
 
 ### pull requests && issues
 <!--CONTRIB BEGIN-->
-#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)62218
+#### [ghostty](https://github.com/ghostty-org/ghostty) ![](./assets/star.svg)62264
 - [cli/list-fonts: add an interactive font picker to +list-fonts](https://github.com/ghostty-org/ghostty/pull/14693) ![](./assets/open.svg)
 - [cli/list-themes: copy config lines and show results on save screen](https://github.com/ghostty-org/ghostty/pull/14606) ![](./assets/open.svg)
 - [macos: opacity-toggle setting persists between tabs in a window and to a newly created window](https://github.com/ghostty-org/ghostty/pull/11583) ![](./assets/merged.svg)
 - [cli/list-themes: add ctrl-d/u paging](https://github.com/ghostty-org/ghostty/pull/14607) ![](./assets/merged.svg)
 - [cli/list-themes: fix keypad page down binding](https://github.com/ghostty-org/ghostty/pull/14605) ![](./assets/merged.svg)
-#### [Maccy](https://github.com/p0deje/Maccy) ![](./assets/star.svg)21933
+#### [Maccy](https://github.com/p0deje/Maccy) ![](./assets/star.svg)21940
 - [Show image size in preview](https://github.com/p0deje/Maccy/pull/1589) ![](./assets/merged.svg)
-#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3583
+#### [tinymist](https://github.com/Myriad-Dreamin/tinymist) ![](./assets/star.svg)3588
 - [feat: add CLI page-title support for preview HTML title](https://github.com/Myriad-Dreamin/tinymist/pull/2445) ![](./assets/merged.svg)
 #### [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) ![](./assets/star.svg)2781
 - [added semicolons at the end of statements from "puts" to "reallocarray" down the file chronologically](https://github.com/rafamadriz/friendly-snippets/pull/568) ![](./assets/merged.svg)
