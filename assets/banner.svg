@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="490" viewBox="0 0 920 490" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12">
+<style>
+  text { white-space: pre; }
+  .in { animation: in .35s ease-out both; }
+  .type { animation: type 1.4s steps(33) .4s both; }
+  .blink { animation: blink 1s steps(1) infinite; }
+  .scan { animation: scan 6s linear 3.69s infinite; }
+  @keyframes in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  @keyframes type { from { transform: translateX(-237.2px); } to { transform: none; } }
+  @keyframes blink { 50% { opacity: 0; } }
+  @keyframes scan { from { transform: translateY(0); } to { transform: translateY(490px); } }
+  @media (prefers-reduced-motion: reduce) { .in, .type, .blink, .scan { animation: none; } .scan { display: none; } }
+</style>
+<defs>
+  <linearGradient id="art" x1="24" y1="86" x2="369.6" y2="435.2" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ca9ee6"/><stop offset=".5" stop-color="#8caaee"/><stop offset="1" stop-color="#81c8be"/>
+  </linearGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#8caaee" stop-opacity="0"/><stop offset="1" stop-color="#8caaee" stop-opacity=".06"/>
+  </linearGradient>
+  <pattern id="lines" width="4" height="3" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1" fill="#232634" opacity=".35"/>
+  </pattern>
+  <clipPath id="win"><rect x="8" y="8" width="904" height="474" rx="12"/></clipPath>
+  <clipPath id="cmdline"><rect x="173.0" y="52" width="235.20000000000002" height="20"/></clipPath>
+  <filter id="glow" x="-5%" y="-5%" width="110%" height="110%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect x="8" y="10" width="904" height="474" rx="12" fill="#232634" opacity=".6"/>
+<g clip-path="url(#win)">
+<rect x="8" y="8" width="904" height="474" fill="#303446"/>
+<rect x="8" y="8" width="904" height="30" fill="#292c3c"/>
+<circle cx="28" cy="23" r="6" fill="#e78284"/>
+<circle cx="48" cy="23" r="6" fill="#e5c890"/>
+<circle cx="68" cy="23" r="6" fill="#a6d189"/>
+<text x="460.0" y="27" fill="#838ba7" text-anchor="middle">david@portfolio: ~ — ghostty</text>
+<text x="30" y="66"><tspan fill="#a6d189" font-weight="700">david@portfolio</tspan><tspan fill="#8caaee"> ~</tspan><tspan fill="#ca9ee6"> ❯ </tspan></text>
+<text x="174.0" y="66" fill="#c6d0f5">fastfetch --logo ~/headshot.jpg</text>
+<g clip-path="url(#cmdline)"><g class="type">
+<rect x="410.20000000000005" y="52" width="237.20000000000002" height="20" fill="#303446"/>
+<rect x="411.20000000000005" y="55" width="7" height="14" fill="#c6d0f5"/>
+</g></g>
+<g fill="url(#art)" filter="url(#glow)" font-size="10.5">
+<text x="24" y="96.0" class="in" style="animation-delay:1.70s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠂⢂⠂⡂⠄⠂⠐⠀⠠⠀⠊⠐⡐⠌⠂⠔⠐⠠⠁⡂⠊⠢⠐⠐⡀⠄⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="106.6" class="in" style="animation-delay:1.73s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⠂⠄⡐⠀⠀⠐⠀⠀⠄⠁⠀⠀⣠⢐⠀⠁⠀⠀⠀⠀⢀⠁⠂⢅⠢⠠⠁⠄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="117.2" class="in" style="animation-delay:1.77s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⠀⠄⠀⠄⡈⠀⠀⠀⠀⠀⠀⠀⠠⠀⠁⠀⠀⡂⢏⠔⠢⠳⠂⠀⠀⠀⠀⠀⠈⡈⠂⠣⠣⠡⡁⠄⠂⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="127.8" class="in" style="animation-delay:1.80s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡐⠀⢀⠠⠀⠅⡀⠄⠄⠀⠐⠀⠄⠀⠐⠀⠂⠀⠀⠈⠀⡔⠀⠀⠀⠀⡀⠀⠠⠀⠀⠐⠀⠈⠌⡎⡆⠡⠊⠄⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="138.4" class="in" style="animation-delay:1.84s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠐⡀⠀⠀⢀⠐⠀⠀⠄⠅⠬⡀⡀⠀⠀⠐⠀⢀⢀⡠⢠⢀⠃⢀⠀⠀⠀⠀⠀⠀⠠⠀⠐⠄⠲⡊⠈⢐⢅⢐⠈⢌⠠⠁⢀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="149.0" class="in" style="animation-delay:1.88s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⢀⠠⠀⠀⠁⠄⠡⠐⠐⠀⠂⠡⠀⠀⠀⢀⠀⠀⠂⠀⢠⡴⠞⠂⠁⡀⠠⠱⢁⠐⡈⠐⢀⠐⠀⠂⠀⠀⠀⡀⠀⠀⠈⠂⠁⠀⢀⢢⠂⠅⡀⠄⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="159.6" class="in" style="animation-delay:1.91s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠌⠀⠈⠀⠀⠀⠀⠀⠀⡀⠀⠐⠀⠄⠂⠀⠀⣟⠁⠀⠀⠁⠀⠀⠀⢂⢈⠠⡡⡡⡂⡂⠄⠀⠠⠀⠀⠀⠀⠀⠀⠀⠰⠂⣕⢅⢅⠂⠄⠐⠀⠀⠀⠀⠀</text>
+<text x="24" y="170.2" class="in" style="animation-delay:1.95s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⢀⢀⠄⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠩⡀⠅⠀⢀⠀⠀⡐⡡⡢⡣⡣⡪⡪⣐⢑⢀⠀⠀⠀⠀⠀⢀⠀⡀⢲⣟⢎⡆⡇⠌⠔⡀⠂⠀⠀⠀⠀</text>
+<text x="24" y="180.8" class="in" style="animation-delay:1.98s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⢀⠐⡐⡰⠁⠀⠄⠀⠀⠄⠀⠁⠀⠀⠄⠀⠂⠀⠄⡠⠀⢀⣠⣤⡴⠶⠶⠦⣤⣔⢰⢸⢸⡸⡜⡽⣸⢔⡅⡢⠀⠀⠀⠐⠀⢠⠐⢠⣿⡾⣗⢧⢣⠣⡑⡀⠂⠁⠀⠀⠀</text>
+<text x="24" y="191.4" class="in" style="animation-delay:2.02s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠄⢂⠢⡱⠀⠀⠀⠐⠈⠀⠀⠀⠀⠄⠀⢀⠔⡡⡑⢄⣼⠟⢋⢁⠠⡠⠀⠀⢀⠈⠑⢝⢳⣽⣪⠯⣫⡷⠾⠛⠛⠙⠓⠢⢄⡀⠐⢟⣷⡿⣽⣕⢗⢕⢕⠨⠠⠁⠠⠀⠀</text>
+<text x="24" y="202.0" class="in" style="animation-delay:2.05s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠄⠄⠌⠌⠃⠀⠀⠀⠀⢀⠀⠀⠂⠀⠀⡕⣜⢔⣱⡟⢁⠈⠈⠀⠁⠀⠁⠂⠄⠀⠀⠀⠡⣘⣡⡾⢋⡤⠦⠢⠐⠀⠐⠀⠀⠁⢛⢊⣿⣟⣷⣳⣝⣎⢆⢣⠡⢈⠀⡀⠀</text>
+<text x="24" y="212.6" class="in" style="animation-delay:2.08s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠡⠐⡡⠱⡍⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠌⠊⠀⣰⡏⢰⢣⠍⠇⡣⡑⠅⠅⡄⢄⠐⡄⠀⠀⢑⠕⠠⢋⢀⠠⡠⢠⠠⡀⡀⠀⠀⠀⠅⣻⣿⣯⣟⣾⡸⡜⡔⡑⠄⠂⠀⠀</text>
+<text x="24" y="223.2" class="in" style="animation-delay:2.12s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠈⠠⢁⠪⡪⡇⠀⠀⠠⠀⠂⠐⠐⠈⠀⠀⠀⠀⠀⢽⡁⠎⡕⠎⠋⠁⠁⠉⠑⠠⠡⡑⡌⡄⠠⢸⠀⡇⠕⡠⠑⠈⠆⢇⠧⡧⠀⠀⠁⢐⠈⣿⣷⣿⣺⣝⢮⢪⠪⠨⢀⠁⠀</text>
+<text x="24" y="233.8" class="in" style="animation-delay:2.16s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠈⠄⢅⠕⡕⣧⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠘⡆⠘⢀⡆⠀⠀⠀⠀⠀⣃⠁⢌⢔⠅⢀⡗⢈⠊⡔⠀⠀⠀⠀⠠⠈⠄⠀⢀⠀⢰⡅⣿⡿⣾⣗⣟⢎⡇⡇⢕⠠⠈⠀</text>
+<text x="24" y="244.4" class="in" style="animation-delay:2.19s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⡈⠄⢅⢕⢕⢷⠋⠉⠠⠀⠀⠀⠠⢀⣤⣦⣶⣷⡇⠀⠙⡄⡑⠝⣄⢀⢀⡀⠜⢄⢖⣽⣺⠀⣸⡇⠂⢖⠬⡀⡀⡀⢁⠜⣄⠀⠀⠢⢀⡿⠀⠿⠿⠻⢟⢎⠯⡪⠊⡢⠐⠀⠄</text>
+<text x="24" y="255.0" class="in" style="animation-delay:2.23s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠠⢈⠢⡱⢭⣳⠀⠀⢐⣕⠄⠀⠀⢐⢵⣟⣾⣳⣿⣄⠀⠑⢜⠦⣢⢰⣐⢬⢸⢸⣺⡷⢃⣴⠏⠀⠀⠈⡇⡆⡆⣌⡢⣲⣏⣤⠊⢄⣾⠃⣼⡻⣻⠞⣷⣟⢞⢎⠓⡌⠂⡈⠀</text>
+<text x="24" y="265.6" class="in" style="animation-delay:2.26s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠨⠀⠣⡊⢮⢞⢦⠀⢱⠂⠄⢀⠀⠀⢽⣞⢮⡷⣿⣽⣦⣀⠀⠉⠪⠻⣪⢾⣾⣻⠭⠖⠛⠁⣠⣿⣄⠀⠈⠙⡺⠵⣯⡷⢛⣠⠞⠋⢠⠞⡿⠀⢡⣬⣛⣎⡛⣌⠀⡪⠀⡐⠀</text>
+<text x="24" y="276.2" class="in" style="animation-delay:2.29s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠁⡁⢊⢐⣕⣫⣛⣳⡨⡡⡐⠄⡂⢀⢽⢮⢯⢯⢷⢯⢯⢯⣗⣦⣤⣀⣀⣀⣀⣀⡄⣤⣶⢿⠿⣽⡻⣧⣄⣀⡀⣈⢀⣈⣁⡠⣤⡞⡿⣳⡷⠐⠐⠈⡉⠉⠷⡘⠕⠨⡀⠐⠀</text>
+<text x="24" y="286.8" class="in" style="animation-delay:2.33s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠐⡀⢢⢡⡨⣄⣣⣽⡳⣨⢾⡞⢖⣔⢵⣫⡫⣫⢫⢏⡯⣞⡮⣾⡺⣯⢿⡽⣝⢜⠐⢏⠃⠁⠑⢔⠕⢡⠓⢽⣻⣻⢯⣺⣺⠘⣿⣏⠹⣟⢋⠘⣙⠈⢅⠁⢠⣈⢘⠨⠀⠀⠀</text>
+<text x="24" y="297.4" class="in" style="animation-delay:2.37s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⡀⠢⠱⡸⠌⢉⠁⢸⣷⠷⡿⡟⣪⡣⡳⡕⡧⡫⣺⢪⡺⣪⢷⣻⢽⣽⣺⢮⣞⢔⢄⣁⡀⡂⡁⢜⣠⢾⣳⣽⣺⢯⣺⢜⡕⣖⢑⠉⡈⣑⠖⠦⠦⠦⠤⠀⣇⡊⡐⢈⠀⠀</text>
+<text x="24" y="308.0" class="in" style="animation-delay:2.40s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⢀⠢⠀⠀⡇⠀⠈⠰⡐⢾⣷⣶⠐⣇⢯⢺⡸⡪⡺⡜⣎⢯⣻⡺⣽⢞⣾⣻⣞⣗⡧⣣⢱⡘⠌⣢⡿⡽⡿⣞⡾⡽⡎⢻⡆⣅⢢⣂⣌⢠⡎⠀⠂⠢⠱⢀⠄⠐⢈⠀⠄⠀</text>
+<text x="24" y="318.6" class="in" style="animation-delay:2.44s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⢀⠀⠀⢐⠅⠀⠀⠀⡇⣌⢿⡟⠀⠸⣎⢧⢳⢱⢱⢝⢮⢳⡳⣝⢼⢽⣻⡞⣞⠮⡟⢞⢓⠝⢝⠏⡛⡽⡽⡽⡽⢽⠀⣮⣣⣟⣳⡞⠍⢰⢇⠸⢋⠓⡑⠡⠂⠌⠀⠀⠀⠀</text>
+<text x="24" y="329.2" class="in" style="animation-delay:2.47s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠠⠠⠤⠤⡄⠀⡇⣠⡶⣷⣮⣼⢪⢪⢪⢎⢎⠎⡎⡆⡇⢗⡽⡝⠎⠊⠀⡁⡈⡀⡀⡀⢀⢀⢀⠀⠁⢩⢏⢎⡊⣿⣿⠹⣙⢙⣼⡗⣬⣟⢋⠌⡁⠅⡐⠀⠂⠀⠁⠀</text>
+<text x="24" y="339.8" class="in" style="animation-delay:2.50s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⢐⠀⠀⠊⠀⢛⠿⡾⢞⢻⢵⢌⠪⡺⡸⡸⡨⡢⡣⣓⢝⢜⠼⣌⢑⠕⠥⡃⢇⠇⡫⢢⠣⢏⢺⢸⢑⢕⠄⡌⢱⢵⢪⢏⠡⠀⢀⠉⡂⢃⠊⠐⠁⠀⠀⠀⠀⠀</text>
+<text x="24" y="350.4" class="in" style="animation-delay:2.54s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠈⠀⠀⠀⠡⠀⢪⠐⡱⠏⠩⣗⢕⢦⢑⠸⢸⢸⡪⡮⣪⡪⢊⢎⢪⠨⡊⠢⠨⠀⠄⡠⠐⡨⢨⡸⠅⠺⣲⣋⣈⣈⣐⣐⡐⡁⡑⠀⠁⠀⠀⠀⠠⠀⠀⠄⠀⠀⠀</text>
+<text x="24" y="361.0" class="in" style="animation-delay:2.58s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠠⠀⠢⠰⠤⠂⣡⠊⠀⣰⡾⣱⢣⡳⣩⢪⡂⢅⠓⡝⡎⣞⢴⢱⢱⣱⢸⢜⡜⡌⡎⡦⡧⡺⡼⢡⡄⡋⠞⠛⠛⠛⠻⠛⠻⠛⠟⠟⠫⠋⠊⠊⠄⠂⠀⠀⠀⠀⠀</text>
+<text x="24" y="371.6" class="in" style="animation-delay:2.61s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠁⠁⠀⢜⠁⠀⣺⢻⡪⢮⡳⡭⡳⡽⣺⣵⡢⡂⡡⢑⠪⡊⡕⡪⢒⠕⠕⢅⢣⠪⡏⢎⡺⣆⠙⠇⠘⣆⡠⠄⠹⡩⠂⡀⠀⠀⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="382.2" class="in" style="animation-delay:2.65s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠑⠀⢈⢎⢳⢕⢳⡹⡪⡫⡯⣗⣟⣞⢽⢰⢂⠌⡐⠐⠨⠂⠅⠅⠅⢂⡁⡬⣸⢣⢸⡦⠀⠀⠙⠑⠜⡄⠟⠢⡇⠫⠀⠂⠂⠁⠀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="392.8" class="in" style="animation-delay:2.68s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⢀⠪⢘⢜⠸⡘⡎⡗⣝⢼⡺⣪⢳⢱⢢⢕⢔⠅⡅⢕⢘⠔⡝⡕⡭⡇⣞⡕⡸⠁⠀⠀⠀⠀⠀⠀⠀⠂⠅⠠⠀⠐⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="403.4" class="in" style="animation-delay:2.71s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠈⡐⡐⠅⡃⢇⠝⡜⢵⢹⢸⢘⠜⢜⢊⠪⡐⢜⢐⢅⢣⠣⡣⢏⡼⠕⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="414.0" class="in" style="animation-delay:2.75s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠄⠡⢈⢐⠡⢊⠪⡪⡊⡢⠩⡐⡰⡑⢜⠌⡆⡇⡕⠕⠅⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+<text x="24" y="424.6" class="in" style="animation-delay:2.79s" textLength="345.6" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠠⠈⡐⢈⠐⡀⠅⠑⠌⠂⠪⠂⠃⠃⠁⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+</g>
+<g class="in" style="animation-delay:2.10s"><text x="392" y="116" font-size="14" font-weight="700"><tspan fill="#a6d189">david</tspan><tspan fill="#c6d0f5">@</tspan><tspan fill="#8caaee">portfolio</tspan></text></g>
+<g class="in" style="animation-delay:2.10s"><text x="392" y="132" fill="#626880">───────────────</text></g>
+<g class="in" style="animation-delay:2.19s"><text x="392" y="154" fill="#ca9ee6" font-weight="700">name</text><text x="482" y="154" fill="#c6d0f5">David Sanchez</text></g>
+<g class="in" style="animation-delay:2.28s"><text x="392" y="176" fill="#f4b8e4" font-weight="700">role</text><text x="482" y="176" fill="#c6d0f5">aspiring inference engineer</text></g>
+<g class="in" style="animation-delay:2.37s"><text x="392" y="198" fill="#e78284" font-weight="700">edu</text><text x="482" y="198" fill="#c6d0f5">B.S. Computer Science @ UGA '26</text></g>
+<g class="in" style="animation-delay:2.46s"><text x="392" y="220" fill="#ef9f76" font-weight="700">work</text><text x="482" y="220" fill="#c6d0f5">project manager @ UPS Healthcare</text></g>
+<g class="in" style="animation-delay:2.55s"><text x="392" y="242" fill="#e5c890" font-weight="700">loc</text><text x="482" y="242" fill="#c6d0f5">Atlanta, GA</text></g>
+<g class="in" style="animation-delay:2.64s"><text x="392" y="264" fill="#a6d189" font-weight="700">shell</text><text x="482" y="264" fill="#c6d0f5">zsh · ghostty · neovim · neogit</text></g>
+<g class="in" style="animation-delay:2.73s"><text x="392" y="286" fill="#81c8be" font-weight="700">langs</text><text x="482" y="286" fill="#c6d0f5">go rust zig python ts swift kotlin lua scala</text></g>
+<g class="in" style="animation-delay:2.82s"><text x="392" y="308" fill="#99d1db" font-weight="700">stack</text><text x="482" y="308" fill="#c6d0f5">pytorch tf react bun node postgres docker aws</text></g>
+<g class="in" style="animation-delay:2.91s"><text x="392" y="330" fill="#8caaee" font-weight="700">tools</text><text x="482" y="330" fill="#c6d0f5">raycast · karabiner · typst · zen</text></g>
+<g class="in" style="animation-delay:3.00s"><text x="392" y="352" fill="#ca9ee6" font-weight="700">building</text><text x="482" y="352" fill="#c6d0f5">niimtui — label printing from the terminal</text></g>
+<g class="in" style="animation-delay:3.09s"><a href="https://dsanch.com"><text x="392" y="374" fill="#f4b8e4" font-weight="700">web</text><text x="482" y="374" fill="#c6d0f5">dsanch.com</text></a></g>
+<g class="in" style="animation-delay:3.18s"><rect x="392" y="386" width="26" height="14" rx="2" fill="#626880"/><rect x="422" y="386" width="26" height="14" rx="2" fill="#e78284"/><rect x="452" y="386" width="26" height="14" rx="2" fill="#a6d189"/><rect x="482" y="386" width="26" height="14" rx="2" fill="#e5c890"/><rect x="512" y="386" width="26" height="14" rx="2" fill="#8caaee"/><rect x="542" y="386" width="26" height="14" rx="2" fill="#f4b8e4"/><rect x="572" y="386" width="26" height="14" rx="2" fill="#81c8be"/><rect x="602" y="386" width="26" height="14" rx="2" fill="#a5adce"/></g>
+<g class="in" style="animation-delay:3.69s">
+<text x="30" y="456"><tspan fill="#a6d189" font-weight="700">david@portfolio</tspan><tspan fill="#8caaee"> ~</tspan><tspan fill="#ca9ee6"> ❯ </tspan></text>
+<rect class="blink" x="174.0" y="445" width="7" height="14" fill="#c6d0f5"/>
+<text x="890" y="456" fill="#626880" text-anchor="end"># psst: try `man david` at dsanch.com</text>
+</g>
+<rect x="8" y="38" width="904" height="444" fill="url(#lines)" pointer-events="none"/>
+<rect class="scan" x="8" y="-60" width="904" height="60" fill="url(#beam)" pointer-events="none"/>
+</g>
+<rect x="8.5" y="8.5" width="903" height="473" rx="12" fill="none" stroke="#414559"/>
+</svg>
