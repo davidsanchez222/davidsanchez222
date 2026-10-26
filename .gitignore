@@ -1,0 +1,6 @@
+__pycache__/
+.DS_Store
+# source photos stay local; the rendered braille is cached in assets/portrait.txt
+assets/headshot*.jpg
+assets/headshot*.jpeg
+assets/headshot*.png
