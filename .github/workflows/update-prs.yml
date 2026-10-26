@@ -22,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install PyGithub
+        run: pip install PyGithub Pillow
 
       - name: Update README contribution section
         env:
@@ -126,11 +126,15 @@ jobs:
               f.write(readme)
           PY
 
+      # the photo isn't in the repo, so this draws the portrait from assets/portrait.txt
+      - name: Regenerate banner
+        run: python scripts/banner.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md assets/banner.svg
           git diff --cached --quiet || git commit -m "Update PR contributions"
 
       - name: Push changes

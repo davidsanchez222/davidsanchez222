@@ -28,8 +28,4 @@
 - [fix: improve filtering ux](https://github.com/Franvy/gtab/pull/4) ![](./assets/merged.svg)
 <!--CONTRIB END-->
 
-<br/>
-
-<img src="https://raw.githubusercontent.com/davidsanchez222/davidsanchez222/main/profile/stats.svg" alt="GitHub Stats" height="600" />
-
 This README is updated daily by [a python script running in GitHub Actions](https://github.com/davidsanchez222/davidsanchez222/blob/master/update.py)

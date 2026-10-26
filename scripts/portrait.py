@@ -12,7 +12,9 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageOps
 DOTS = [(0, 0, 0x01), (0, 1, 0x02), (0, 2, 0x04), (1, 0, 0x08), (1, 1, 0x10), (1, 2, 0x20), (0, 3, 0x40), (1, 3, 0x80)]
 
 
-def braille(path, cols=64, rows=32, focus=(0.5, 0.45), zoom=1.0, head=(0.86, 1.0), feather=0.045, contrast=1.6, edges=0.4):
+def braille(
+    path, cols=64, rows=32, focus=(0.5, 0.45), zoom=1.0, head=(0.86, 1.0), feather=0.045, contrast=1.6, edges=0.4, flatten=0.0
+):
     """Return `rows` strings of `cols` braille characters; lit dots are the bright parts of the photo.
 
     focus   center of the crop, as fractions of the image width/height
@@ -21,6 +23,7 @@ def braille(path, cols=64, rows=32, focus=(0.5, 0.45), zoom=1.0, head=(0.86, 1.0
     feather mask edge softness as a fraction of the crop width
     contrast gamma applied after equalizing; above 1 darkens midtones so features stand out
     edges   how strongly to trace outlines, so dark areas like hair still get a shape (0 turns it off)
+    flatten 0..1 blend toward a high-pass copy, which evens out side lighting in dim photos (0 turns it off)
     """
     img = ImageOps.exif_transpose(Image.open(path)).convert("L")
     w, h = img.size
@@ -32,6 +35,10 @@ def braille(path, cols=64, rows=32, focus=(0.5, 0.45), zoom=1.0, head=(0.86, 1.0
     img = img.crop((round(cx - cw / 2), round(cy - ch / 2), round(cx + cw / 2), round(cy + ch / 2)))
 
     mw, mh = img.size
+    if flatten:
+        # detail relative to the local brightness, so a shadowed half of the face keeps its features
+        detail = ImageChops.subtract(img, img.filter(ImageFilter.GaussianBlur(mw * 0.1)), scale=0.4, offset=128)
+        img = Image.blend(img.point(lambda v: min(255, int(v * 1.8))), detail, flatten)
     mask = Image.new("L", img.size, 0)
     ex, ey = mw * head[0] / 2, mh * head[1] / 2
     ImageDraw.Draw(mask).ellipse((mw / 2 - ex, mh / 2 - ey, mw / 2 + ex, mh / 2 + ey), fill=255)
