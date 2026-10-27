@@ -55,7 +55,7 @@ FONT = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monos
 FONT_SIZE = 12.5
 
 # framing for the photo, passed to portrait.braille; see its docstring
-PORTRAIT = dict(focus=(0.49, 0.40), zoom=0.64, head=(0.85, 1.05), contrast=1.3, edges=0.25, flatten=0.45)
+PORTRAIT = dict(focus=(0.46, 0.50), zoom=0.46, head=(0.8, 1.0), contrast=1.5, edges=0.3, flatten=0.3)
 ART_COLS, ART_ROWS = 44, 22
 
 USER, HOST = "david", "portfolio"
